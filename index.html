@@ -8,11 +8,24 @@
         body {
             font-family: 'Arial', sans-serif;
             background-color: #000000;
+            margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            margin: 0;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* ระยะห่างระหว่างแมวกับการ์ด */
+        }
+        .img1 {
+            width: 150px; /* กำหนดขนาดของรูปแมว */
+            height: auto;
+        }
+        .img1 img {
+            width: 100%;
+            border-radius: 10px; /* ทำให้ภาพแมวมุมมน */
         }
         .about-card {
             width: 300px;
@@ -69,48 +82,52 @@
     </style>
 </head>
 <body>
-    
-    <div class="about-card">
-        <div class="profile-pic">
-            <img src="My.jpg" alt="Profile Picture">
+    <div class="container">
+        <div class="img1">
+            <img src="Cat.png" alt="Profile Picture">
         </div>
-        <h1>Sitthisak Sainamnan</h1>
+        <div class="about-card">
+            <div class="profile-pic">
+                <img src="My.jpg" alt="Profile Picture">
+            </div>
+            <h1>Sitthisak Sainamnan</h1>
 
-        <div class="section-title">ประวัติส่วนตัว</div>
-        <div class="info">
-            <p>อายุ: 21 ปี</p>
-            <p>เกิดวันที่: 9 กรกฎาคม 2546</p>
-            <p>สัญชาติ: ไทย</p>
-            <p>ศาสนา: พุทธ </p>
-            <p>สถานะ: โสด</p>
-        </div>
+            <div class="section-title">ประวัติส่วนตัว</div>
+            <div class="info">
+                <p>อายุ: 21 ปี</p>
+                <p>เกิดวันที่: 9 กรกฎาคม 2546</p>
+                <p>สัญชาติ: ไทย</p>
+                <p>ศาสนา: พุทธ </p>
+                <p>สถานะ: โสด</p>
+            </div>
 
-        <div class="section-title">การศึกษา</div>
-        <div class="info">
-            <p>กำลังศึกษาในระดับปริญญาตรี ที่มหาวิทยาลัยศรีปทุม</p>
-            <p>มัธยมศึกษาตอนปลาย ที่โรงเรียนปทุมคงคา</p>
-        </div>
+            <div class="section-title">การศึกษา</div>
+            <div class="info">
+                <p>กำลังศึกษาในระดับปริญญาตรี ที่มหาวิทยาลัยศรีปทุม</p>
+                <p>มัธยมศึกษาตอนปลาย ที่โรงเรียนปทุมคงคา</p>
+            </div>
 
-        <div class="section-title">อาชีพในฝัน</div>
-        <div class="info">
-            <p>Programmer or something about IT</p>
-        </div>
+            <div class="section-title">อาชีพในฝัน</div>
+            <div class="info">
+                <p>Programmer or something about IT</p>
+            </div>
 
-        <div class="section-title">งานอดิเรก</div>
-        <div class="info">
-            <p>เล่นเกม, ดูหนัง, ฟังเพลง</p>
-        </div>
+            <div class="section-title">งานอดิเรก</div>
+            <div class="info">
+                <p>เล่นเกม, ดูหนัง, ฟังเพลง</p>
+            </div>
 
-        <div class="section-title">คติประจำใจ</div>
-        <div class="info">
-            <p>ทำทุกอย่างเหมือนวันนี้เป็นวันสุดท้าย</p>
-        </div>
+            <div class="section-title">คติประจำใจ</div>
+            <div class="info">
+                <p>ทำทุกอย่างเหมือนวันนี้เป็นวันสุดท้าย</p>
+            </div>
 
-        <div class="section-title">ข้อมูลการติดต่อ</div>
-        <div class="contact-info">
-            <p><span class="icon">📞</span> 065-940-7445</p>
-            <p><span class="icon">✉️</span> Sitthisak.san@spumail.net</p>
-            <p><span class="icon">🌐</span> @Nicky_Azure</p>
+            <div class="section-title">ข้อมูลการติดต่อ</div>
+            <div class="contact-info">
+                <p><span class="icon">📞</span> 065-940-7445</p>
+                <p><span class="icon">✉️</span> Sitthisak.san@spumail.net</p>
+                <p><span class="icon">🌐</span> @Nicky_Azure</p>
+            </div>
         </div>
     </div>
 </body>
