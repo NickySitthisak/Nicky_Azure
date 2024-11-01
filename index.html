@@ -3,75 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
+    <title>About Me</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
+        }
+        .about-card {
+            width: 300px;
+            padding: 30px;
+            border: 2px solid #00fff2;
+            background-color: #fff;
+            box-shadow: 0 8px 12px rgb(0, 238, 255);
+            text-align: center;
+            border-radius: 10px;
+            font-family: 'Prompt', sans-serif;
+        }
+        .profile-pic {
+            width: 300px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+        }
+        h1 {
+            font-size: 1.5em;
             color: #333;
         }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem;
+        .section-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #ff6f61;
+            margin-top: 15px;
+        }
+        .info {
+            text-align: left;
+            font-size: 0.9em;
+            margin: 10px 0;
+        }
+        .info p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .contact-info {
             text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
         }
-        nav {
-            margin: 0;
-            padding: 1rem;
-            background-color: #333;
+        .contact-info p {
+            margin: 5px 0;
         }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        main {
-            padding: 2rem;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        .icon {
+            font-size: 1.2em;
+            color: #ff6f61;
         }
     </style>
 </head>
 <body>
+    
+    <div class="about-card">
+        <div class="profile-pic">
+            <img src="My.jpg" alt="Profile Picture">
+        </div>
+        <h1>Sitthisak Sainamnan</h1>
 
-    <header>
-        <h1>Welcome to My Web Page</h1>
-    </header>
+        <div class="section-title">ประวัติส่วนตัว</div>
+        <div class="info">
+            <p>อายุ: 21 ปี</p>
+            <p>เกิดวันที่: 9 กรกฎาคม 2546</p>
+            <p>สัญชาติ: ไทย</p>
+            <p>ศาสนา: พุทธ </p>
+            <p>สถานะ: โสด</p>
+        </div>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
+        <div class="section-title">การศึกษา</div>
+        <div class="info">
+            <p>กำลังศึกษาในระดับปริญญาตรี ที่มหาวิทยาลัยศรีปทุม</p>
+            <p>มัธยมศึกษาตอนปลาย ที่โรงเรียนปทุมคงคา</p>
+        </div>
 
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is the home section of my web page.</p>
-        </section>
-        <section id="about">
-            <h2>About</h2>
-            <p>This section tells you more about the site.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out through our contact section.</p>
-        </section>
-    </main>
+        <div class="section-title">อาชีพในฝัน</div>
+        <div class="info">
+            <p>Programmer or something about IT</p>
+        </div>
 
-    <footer>
-        &copy; This is Sitthisak Web Page for CPE406_Azure
-    </footer>
+        <div class="section-title">งานอดิเรก</div>
+        <div class="info">
+            <p>เล่นเกม, ดูหนัง, ฟังเพลง</p>
+        </div>
 
+        <div class="section-title">คติประจำใจ</div>
+        <div class="info">
+            <p>ทำทุกอย่างเหมือนวันนี้เป็นวันสุดท้าย</p>
+        </div>
+
+        <div class="section-title">ข้อมูลการติดต่อ</div>
+        <div class="contact-info">
+            <p><span class="icon">📞</span> 065-940-7445</p>
+            <p><span class="icon">✉️</span> Sitthisak.san@spumail.net</p>
+            <p><span class="icon">🌐</span> @Nicky_Azure</p>
+        </div>
+    </div>
 </body>
 </html>
